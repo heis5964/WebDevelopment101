@@ -1,0 +1,14 @@
+ครั้งแรกในการอัพโหลดไฟล์ขึ้นGitHub
+1.git init
+2.git add .
+3.git commit -m "first commit"
+4.git branch -M main
+5.git remote add origin https://github.com/heis5964/WebDevelopment101.git
+6.git push -u origin main
+ีครั้งต่อไปใช้GUI
+1)เลือกไอคอน SOURCE CONTROL
+2)ใส่ชื่อ V7 ช่อง Message 
+3)กดปุ่ม Commit 
+4)เลือก ...
+5)เลือก push 
+
