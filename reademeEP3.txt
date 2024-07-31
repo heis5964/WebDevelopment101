@@ -1,0 +1,57 @@
+2.CSS EP.3
+2.1CSS จะภายใต้แท็ก <head></head> ของ html 
+  1)<style>
+    /* สิ่งที่อยู่ตรงนี้ จะมีไว้แค่ให้ div อ่าน */
+    </style>
+  2)ตั้งโจทย์ว่า 
+    1.แต่งใคร? แต่งหน้าฟอร์ม 
+      - เราจะต้อง select ที่เราต้องการแต่ง คือ
+        id, class, DOM 
+      1)body {
+            background-color: gray; คือ ออบเจ็ค
+        }
+      2)id เหมาะสำหรับมีสิ่งเดียว
+        #register {
+            color: blue;
+        }
+        <h1 id="register">Register form</h1>
+      3)class
+        .form {
+            border: 0;
+        }
+        ชื่อ: <input class="form" type="text">
+    2.แต่งอะไร? แต่งสี อักษรตัวหนา
+3)CSS มี 2 ประเภท
+  1.Basic 
+    1.1 CSS Text Styling (font-size, font-family)
+    1.2 CSS Box model (margin, padding, border)
+    1.3 CSS Position (static, relative, absolute, fixed)
+    1.4 CSS Layout (display: block, inline, inline-blod)
+    1.5 CSS float wrap text ได้ (float: left, float:right)
+    1.6 CSS Image (background-color, background-image, )
+  2.Advance นิดนึง
+    2.1 CSS Pseudo class (:hover, :active, :first-child)
+    2.2 CSS Transition and animation 
+4)Google Font https://fonts.google.com/
+  1.ดาวน์โหลด font Kanit 
+  2.แตกไฟล์
+  3.นำไปวางไว้ในโฟลเดอร์ระบบงาน
+5)วิธีการนำfontไปใช้
+  @font-face {
+            font-family: 'kanit';
+            src: url('./Kanit/Kanit-Regular.ttf');
+        }
+  body  {
+            font-family: 'kanit';
+        }
+6)div เปรียบเสมือนกล่องๆนึง 
+  1)padding คือ ในกล่อง ต้องการขยายในกล่อง ให้ใช้ padding
+  2)margin คือ นอกกล่อง ต้องการขยายนอกกล่อง ให้ใช้ margin
+  3)จุดประสงค์ทั้งข้อ 1 และข้อ 2 คือการเว้นช่องว่าง
+ึ7)การตีเส้นขอบ
+  1)border คือ การเพิ่มเส้นให้กับกล่องรอบข้าง มีค่า 3 ค่า ดังนี้
+    border: 1px blue solid;
+    - 1px
+    - blue 
+    - solid 
+    

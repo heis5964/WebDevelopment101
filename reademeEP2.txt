@@ -1,0 +1,46 @@
+1.HTML file EP.2
+Outline คือ สิ่งที่จะเรียนกัน
+1.1html คืออะไร
+1.2Basic structure (<html>, <head>, <bode>)
+1.3DOM (html tag)
+1.4html (id, class, attribute)
+1.5type of html 
+   1)html content (h1-h6, p, list, table, link, image, video, br, div)
+   2)html semantic 
+   3)html form (input text-number, checkbox, radio, textarea, button)
+1.6example register form 
+=========================
+1.1html คืออะไร 
+   1)สร้างไฟล์ index.html 
+   2)พิมพ์ html เลือก html:5 กดปุ่ม Enter 
+   3)ภาษา html ประกอบด้วยองค์ประกอบ 2 ส่วน คือ
+     3.1ส่วนของ head คือ ส่วนที่ไม่แสดงออกไปในหน้าจอของ Browser
+     3.2ส่วนของ body คือ ส่วนที่แสดงออกไปในหน้าจอของ Browser
+     3.3comment <!--  -->, //
+     3.4Tag มี 2 แบบ
+        3.1.1 แบบเปิดและปิด เช่น <head></head>, <body></body>
+        3.1.2 แบบเปิดและปิดในตัวเอง เช่น <br>, <meta charset="UTF-8">
+     3.4DOM คือ คำสั่งของ html 1tag หรือ 1element  เช่น <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        3.4.1องค์ประกอบของDOM ประกอบด้วย attribute 
+             เช่น <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             meta คือคำสั่ง ส่วน attribute ประกอบด้วย name, content,
+1.2html content คือ อะไรก็ตามที่แสดงให้ User มองเห็นได้
+1.3html semantic คือ มีผลเหมือน content แต่มี SCO ให้เข้าใจง่าย
+1.4html form คือ อะไรก็ตามที่ให้ User กด Submit หรือทำการส่งข้อมูลบนเว็บไซต์ได้
+=========================
+1.2html content 
+   1)h1-h6 คือ การแสดงผลขนาดของตัวอักษร
+   2)<p></p> คือ จะมีระยะห่างระหว่างบรรทัดเท่ากัน
+   3)<ul><li></li></ul> คือ การแสดงรายการไม่มีตัวเลข
+   4)<ol><li></li></ol> คือ การแสดงรายการที่มีตัวเลขลำดับ
+   5)<table><thead><tr></tr></thead></table>
+   6)link <a href="https://shopee.co.th" target="_blank">shopee</a>
+   7)img 
+   8)div คือ จะไม่มีระยะห่างระหว่างบรรทัด ไม่มีอะไรตบแต่ง
+1.3html semantic คือ เว็บไซต์ที่ทำให้มีความหมายมากขึ้น และให้เสริตเอ็นจินค้นหาได้ง่าย
+1.4html form คือ ทำให้ผู้คนเล่นกับเว็บไซต์ได้
+
+
+
+
+

@@ -1,0 +1,25 @@
+1.ที่มาของเว็บไซต์ เมื่อ User พิมพ์เว็บไซต์ shoopee.com EP.1
+User->Brower->พิมพ์shoopee.com(Domain)->
+DNS(Domain Name Server)[ค้นหาว่า เครื่องServer(ระบุเป็นหมายเลขIP(เปรียบเสมือนบ้านเลขที่) เช่น 1.2.3.4) shoop.com อยู่ที่ไหน]->
+คุยกับDatabase->Serverเตรียมของที่Userร้องขอ->ส่งไฟล์ๆหนึ่งกับไปให้Brower->เพื่อให้Userเห็นไฟล์ที่ร้องขอไป
+2.ไฟล์ที่Serverตอบกับให้Userคือไฟล์ HTML file 
+  1)HTML คือ โครงสร้างเว็บไซต์
+  2)CSS คือ ตบแต่งเว็บไซต์
+  3)Javascript คือ Logic ของเว็บไซต์
+3.Server เป็น Backend ผู้พัฒนาเท่านั้นที่จะมองเห็น (User จะมองไม่เห็น)
+  1)Web Server คือ ผู้นำทาง
+  2)Backend language คือ ภาษา Java, Node, Golang เป็น Logic 
+    จะสื่อสารเพื่อขอข้อมูลกับฐานข้อมูล MySQL เพื่อส่งกับไปให้ Server 
+    แล้ว Server จะส่งกับไปหน้าบ้านที่จะแสดงผลในรูปแบบ HTML file และเป็นส่วนที่ User มองเห็น
+4.ข้อ 2. และ ข้อ 3. เรียกว่า Server side render
+5.เว็บไซต์ยุคสมัยใหม่ กรณีค้นหาข้อมูล เช่น พิมพ์คำว่า ทอสอบ ในช่องค้นหา จะมีผลลัพธ์แสดงขึ้นมาให้เห็นคือ Javascript ส่งข้อมูลไปบอกให้ API
+  1)API คือ สแตนดาร์มาตรฐานกลาง ไม่ว่าภาษาอะไรก็สามารถสร้างขึ้นมาได้
+  2)API จะต้องเป็น โปโตคอลที่ Javascript สามารถไปคุย Backend language ไปคุยกับ Database และส่งข้อมูลกับมาให้ Server และส่งไปให้ User
+ุ6.เว็บไซต์ https://www.w3schools.com/
+7.เว็บไซต์ https://web.dev/
+8.Editer ที่ใช้ในการพัฒนาเว็บไซต์
+  1)Visual Studio Code (VSCode) 
+  2)https://code.visualstudio.com/
+
+
+
