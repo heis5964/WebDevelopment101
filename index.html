@@ -14,51 +14,72 @@
         body {
             font-family: 'kanit';
         }
-        #register {
-            font-size: 24px;
-            color: blue;
-            font-weight: 800;
-            padding: 10px;
-            margin: 10px;
-            background-color: yellow;
-            border: 1px blue solid;
+        .container {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: azure;
+            padding: 30px;
+        }
+        .header {
+            font-size: 30px;
+            text-align: center;
         }
         .header-form {
-            font-weight: 800;
+            width: 140px;
         }
-        .form{
-            /* กำหนดให้ขึ้นบรรทัดใหม่ */
-            display: block;
+        .flex {
+            display: flex;
         }
-        .gender {
-            /* กำหนดให้แสดงบรรทัดเดียวกัน */
-            display: inline-block;
+        .form-input {
+            margin-bottom: 10px;
+        }
+        .center {
+            text-align: center;
+        }
+        input.form, textarea {
+            border: 1px gainsboro solid;
+            width: 100%;
+        }
+        .button {
+            border: 0;
+            width: 100%;
+            height: 40px;
+            background-color: #2962ff;
+            color: white;
+
         }
     </style>
 </head>
 <body>
     <!-- ส่วนที่แสดงออกไปในหน้าจอของ Brower -->
+
+    <div class="container">
     <!-- 1.3html form -->
-    <div id="register">Register form</div>
-    <span class="header-form">ชื่อ:</span> 
-    <input class="form" type="text">
-    <span class="header-form">นามสกุล:</span> 
-    <input class="form" type="text"> <br>
-    อายุ: 
-    <input class="form" type="number" nim="0" max="100">
-    <div>
-        เพศ
-        <div class="gender">
+    <div class="header form-input">
+        Register form
+    </div>
+    <div class="flex form-input">
+        <div class="header-form">ชื่อ:</div> 
+        <input class="form" type="text">
+    </div>
+    <div class="flex form-input">
+        <div class="header-form">นามสกุล:</div> 
+        <input class="form" type="text">
+    </div>
+    <div class="flex form-input">
+        <div class="header-form">อายุ:</div> 
+        <input class="form" type="number" nim="0" max="100">
+    </div>
+    <div class="flex gender form-input">
+        <div class="header-form">เพศ</div>
+        <div>
             <input name="gender" type="radio"> ชาย
-        </div>
-        <div class="gender">
             <input name="gender" type="radio"> หญิง
-        </div>
-        <div class="gender">
             <input name="gender" type="radio"> ไม่ระบุ
         </div> 
     </div>
-    <div>
+    <div class="form-input">
         สิ่งที่สนใจ
         <div>
             <input name="gender" type="checkbox"> หนังสือ
@@ -70,14 +91,19 @@
             <input name="gender" type="checkbox"> การเมือง
         </div>
     </div>
-    <div>
+    <div class="form-input">
         คำอธิบายตัวตนเพิ่มเติม
         <div>
             <textarea></textarea>
         </div>
     </div>
-    <a href="https://shopee.co.th" target="_blank">T&C</a>
-    <button>ส่งข้อมูล</button>
-    <input type="submit" value="ส่งข้อมูล">
+    <div class="form-input center">
+        <a href="https://shopee.co.th" target="_blank">T&C</a>
+    </div>
+    <div class="center">
+        <button class="button">ส่งข้อมูล</button>
+    </div>
+</div>
+
 </body>
 </html>

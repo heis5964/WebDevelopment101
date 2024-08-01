@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ส่วนที่ไม่แสดงออกไปในหน้าจอของ Brower -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'kanit';
+            src: url('./Kanit/Kanit-Regular.ttf');
+        }
+        body {
+            font-family: 'kanit';
+        }
+        #register {
+            font-size: 24px;
+            color: blue;
+            font-weight: 800;
+            padding: 10px;
+            margin: 10px;
+            background-color: yellow;
+            border: 1px blue solid;
+        }
+        .header-form {
+            font-weight: 800;
+        }
+        .form{
+            /* กำหนดให้ขึ้นบรรทัดใหม่ */
+            display: block;
+        }
+        .gender {
+            /* กำหนดให้แสดงบรรทัดเดียวกัน */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- ส่วนที่แสดงออกไปในหน้าจอของ Brower -->
+    <!-- 1.3html form -->
+    <div id="register">Register form</div>
+    <span class="header-form">ชื่อ:</span> 
+    <input class="form" type="text">
+    <span class="header-form">นามสกุล:</span> 
+    <input class="form" type="text"> <br>
+    อายุ: 
+    <input class="form" type="number" nim="0" max="100">
+    <div>
+        เพศ
+        <div class="gender">
+            <input name="gender" type="radio"> ชาย
+        </div>
+        <div class="gender">
+            <input name="gender" type="radio"> หญิง
+        </div>
+        <div class="gender">
+            <input name="gender" type="radio"> ไม่ระบุ
+        </div> 
+    </div>
+    <div>
+        สิ่งที่สนใจ
+        <div>
+            <input name="gender" type="checkbox"> หนังสือ
+        </div>
+        <div>
+            <input name="gender" type="checkbox"> วีดีโอเกม
+        </div>
+        <div>
+            <input name="gender" type="checkbox"> การเมือง
+        </div>
+    </div>
+    <div>
+        คำอธิบายตัวตนเพิ่มเติม
+        <div>
+            <textarea></textarea>
+        </div>
+    </div>
+    <a href="https://shopee.co.th" target="_blank">T&C</a>
+    <button>ส่งข้อมูล</button>
+    <input type="submit" value="ส่งข้อมูล">
+</body>
+</html>
