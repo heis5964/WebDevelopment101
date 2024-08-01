@@ -1,0 +1,20 @@
+มาสู่ตอนที่ 4 ของซีรีย์ web development 101 ด้วยการเรียนรู้ภาษา CSS กันต่อ ในบทเรียนนี้เราจะเรียนเรื่องการ selector CSS ที่ลึกซึ้งขึ้น (เพื่อให้เราทำงานได้หลากหลายเคสมากขึ้น) / แนะนำให้รู้จักกับ animation อย่างง่าย และ พาไปเจาะประเด็นของ Responsive development กัน 
+
+หัวข้อ
+00:00 Introduction
+01:46 พาสร้างไฟล์ใหม่ css.html เพื่อใช้สำหรับเล่นตลอดบทเรียน
+02:17 Selector parent - child 4 ตัว
+14:15 Pseudo selector / Pseudo class
+20:37 Pseudo element
+25:45 Transform / Transition / Animation (แบบคร่าวๆ)
+30:47 เริ่มต้นแนะนำ Responsive / Responsive guideline
+34:00 แนะนำ Debugging tools - Device toolbar (ใช้สำหรับเปลี่ยนขนาดหน้าจอตาม size ต่างๆ)
+35:28 Responsive outline ว่าจะพูดถึงอะไรบ้าง
+36:12 Responsive - breakpoint
+38:40 Responsive - image srcset (สำหรับการแสดงผลภาพหลายขนาดหน้าจอ)
+41:21 Responsive - Fluid Layout (flex) และ Flexible Grid (grid) แบบย่อจอ
+47:32 Responsive - ตัวอย่าง Menu bar / Nav bar
+55:32 แนะนำการ import script css เข้าจากภายนอก
+57:20 กลับมาแก้ Form ตัวเดิมจาก session ที่แล้วให้เป็น responsive อย่างง่าย 
+1:04:45 เว็บไซต์แนะนำ / แนะนำลำดับการแต่ง CSS
+1:05:50 สรุปว่าเราเรียนอะไรกันไปบ้าง
