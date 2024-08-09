@@ -6,35 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .button {
-            background-color: gray;
-            border: 0;
-            padding: 20px;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        /* กำหนดให้เรียงเป็นแถวเดียวกัน */
+        .desktop ul {
+            display: flex;
+        }
+        /* กำหนดระยะห่าง */
+        .desktop ul > li {
+            margin-right: 20px;
         }
 
-        .button:hover {
-            background-color: blue;
-        }
-        
-        .button:active {
-            background-color: orange;
-        }
-        .button:focus {
-            background-color: red;
+        .mobile-menu,
+        .mobile {
+            display: none;
         }
 
-        input:focus {
-            background-color: orange;
+        @media screen and (max-width: 768px) {
+            .desktop ul {
+                display: none;
+            }
+            .mobile-menu {
+                display: block;
+            }
+            .mobile-menu:hover + .mobile {
+                display: block;
+            }
         }
     </style>
 </head>
 <body>
-
-
-    <!--:hover=วาง, :active=คลิก, :focus=cursorออก-->
-    <input type="text">
-    <button class="button">นี่คือปุ่ม</button>
-
+    <div class="desktop">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+    <div class="mobile-menu">Menu</div>
+    <div class="mobile">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
 
 </body>
 </html>

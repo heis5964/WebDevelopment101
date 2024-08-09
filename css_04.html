@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: red;
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- breakpoint คือ การสร้างเงื่อนไข กรณีที่หน้าจอมีขนาดเท่าไหร่ออกมาได้ -->
+    <!--สร้างเงื่อนไข กรณีที่หน้าจอมีขนาดน้อยกว่า 768px เปลี่ยนจากสีแดงเป็นสีน้ำเงิน
+    @media screen and (max-width: 768px) {
+            .container {
+                background-color: blue;
+            }
+        }
+    -->
+    <!--สร้างเงื่อนไข กรณีที่หน้าจอมีขนาดมากกว่า 768px เปลี่ยนจากสีแดงเป็นสีน้ำเงิน
+    @media screen and (min-width: 768px) {
+            .container {
+                background-color: blue;
+            }
+        }
+    -->
+    <div class="container">
+        Hello World! breakpoint
+    </div>
+    <!-- images คือ การสร้างเงื่อนไข กรณีที่หน้าจอมีขนาดเท่าไหร่ออกมาได้ -->
+    <picture>
+        <source media="(max-width: 768px)" srcset="https://fastly.picsum.photos/id/168/200/200.jpg?hmac=VxnpUGg87Q47YRONmdsU2vNGSPjCs5vrwiAL-0hEIHM">
+        <img src="https://fastly.picsum.photos/id/700/200/200.jpg?hmac=_WGJyaec5-FtaUPt721cMe1xainltHzU0AEV8LZwecE">
+    </picture>
+</body>
+</html>
