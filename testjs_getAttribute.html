@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Javascript</title>
+</head>
+<body>
+    <a id="thislink" href="https://google.com" target="_blank">Google</a>
+    ชื่อจริง: <input type="text" name="firstname" value="test">
+    <script>
+        /*ดึงค่าออกมาข้อความออกมาแสดง*/
+        let thislinkDOM = document.getElementById('thislink')
+        let thisInput = document.querySelector('input[name=firstname]')
+
+        console.log(thislinkDOM.getAttribute('href'))
+        console.log(thislinkDOM.getAttribute('target'))
+        console.log(thisInput.value)
+        console.log(thisInput.getAttribute('value'))
+    </script>
+</body>
+</html>

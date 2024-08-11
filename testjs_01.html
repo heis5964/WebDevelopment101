@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Javascript</title>
+</head>
+<body>
+    <div>Hello world</div>
+    ชื่อจริง: <input
+        id="firstname" 
+        class="input"
+        type="text" 
+        name="firstname" 
+        value="ทดสอบ">
+    นามสกุล: <input
+        id="lastname" 
+        class="input"
+        type="text" 
+        name="lastname" 
+        value="นามสกุลแรก">
+    <script>
+        /*ดึงค่าออกมา*/
+        let inputsDOM = document.getElementsByClassName('input')
+        console.log(inputsDOM)
+        for (let i = 0; i < inputsDOM.length; i++) {
+            console.log(inputsDOM[i].value)
+        }
+    </script>
+</body>
+</html>

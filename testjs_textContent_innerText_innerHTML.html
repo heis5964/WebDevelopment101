@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Javascript</title>
+</head>
+<body>
+    <div id="hello">
+        Hello <span style="display: none;">Nes</span>
+    </div>
+    <script>
+        /*ดึงค่าออกมาข้อความออกมาแสดง*/
+        //textContent จะแสดงข้อความทั้งหมดออกมา
+        //innerText จะแสดงข้อความที่userมองเห็น
+        //innerHTML จะแสดงข้อความที่มีhtmlออกมาด้วย
+        let helloDOM = document.getElementById('hello')
+        /*helloDOM.textContent = 'Hello <b>P</b>'*/
+        /*helloDOM.innerText = 'Hello <b>P</b>'*/
+        helloDOM.innerHTML = 'Hello <b>P</b>'
+        console.log(helloDOM.textContent)
+        console.log(helloDOM.innerText)
+        console.log(helloDOM.innerHTML)
+    </script>
+</body>
+</html>

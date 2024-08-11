@@ -18,55 +18,55 @@
     </div>
     <div class="flex form-input">
         <div class="header-form">ชื่อ:</div> 
-        <input class="form" type="text">
+        <input class="form" type="text" name="firstname">
     </div>
     <div class="flex form-input">
         <div class="header-form">นามสกุล:</div> 
-        <input class="form" type="text">
+        <input class="form" type="text" name="lastname">
     </div>
     <div class="flex form-input">
         <div class="header-form">อายุ:</div> 
-        <input class="form" type="number" nim="0" max="100">
+        <input class="form" type="number" name="age" nim="0" max="100">
     </div>
     <div class="flex gender form-input">
         <div class="header-form">เพศ</div>
         <div class="flex">
             <div>
-                <input name="gender" type="radio"> ชาย
+                <input name="gender" type="radio" value="ชาย"> ชาย
             </div>
             <div>
-                <input name="gender" type="radio"> หญิง
+                <input name="gender" type="radio" value="หญิง"> หญิง
             </div>
             <div>
-                <input name="gender" type="radio"> ไม่ระบุ
+                <input name="gender" type="radio" value="ไม่ระบุ"> ไม่ระบุ
             </div>
         </div> 
     </div>
     <div class="form-input">
         สิ่งที่สนใจ
         <div>
-            <input name="gender" type="checkbox"> หนังสือ
+            <input name="interest" type="checkbox" value="หนังสือ"> หนังสือ
         </div>
         <div>
-            <input name="gender" type="checkbox"> วีดีโอเกม
+            <input name="interest" type="checkbox" value="วีดีโอเกม"> วีดีโอเกม
         </div>
         <div>
-            <input name="gender" type="checkbox"> การเมือง
+            <input name="interest" type="checkbox" value="การเมือง"> การเมือง
         </div>
     </div>
     <div class="form-input">
         คำอธิบายตัวตนเพิ่มเติม
         <div>
-            <textarea></textarea>
+            <textarea name="description"></textarea>
         </div>
     </div>
     <div class="form-input center">
         <a href="https://shopee.co.th" target="_blank">T&C</a>
     </div>
     <div class="center">
-        <button class="button">ส่งข้อมูล</button>
+        <button  onclick="submitData()" class="button">ส่งข้อมูล</button>
     </div>
 </div>
-
+<script src="index.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Javascript</title>
+</head>
+<body>
+    <button onclick="clickItem()">ปุ่มที่ 1</button>
+    <button id="thisbutton">ปุ่มที่ 2</button>
+    <script>
+        /*ดึงค่าออกมาEvent on change*/
+        let thisbuttonDOM = document.getElementById('thisbutton')
+        thisbuttonDOM.addEventListener('click', function () {
+            console.log('ปุ่มที่ 2 clicked')
+        })
+        function clickItem () {
+            console.log('ปุ่มที่ 1 clicked')
+        }
+    </script>
+</body>
+</html>
