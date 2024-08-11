@@ -1,0 +1,10 @@
+ขั้นตอนการทำระบบหลังบ้าน
+1.พิมพ์ npm init แล้วกด enter ให้หมด เป็นการสร้างไฟล์ package.json
+2.สร้างฐานข้อมูลชื่อ tutorials
+3.พิมพ์ npm install express เพื่อติดตั้ง express
+4.ติดตั้ง nodemon เพื่อแก้ปัญหาเมื่อการแก้ไขโค๊ดจะต้องไม่ต้องrun node ใหม่
+  4.1พิมพ์ npm install nodemon --save-dev
+5.พิมพ์คำสั่ง npx nodemon index.js
+6.ติดตั้ง library body-parser
+  1)npm install body-parser
+
