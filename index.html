@@ -10,6 +10,7 @@
 </head>
 <body>
     <!-- ส่วนที่แสดงออกไปในหน้าจอของ Brower -->
+    <a href="user.html">go to user management</a>
 
     <div class="container">
     <!-- 1.3html form -->
@@ -63,10 +64,13 @@
     <div class="form-input center">
         <a href="https://shopee.co.th" target="_blank">T&C</a>
     </div>
+    <div id="response-message" class="message"></div>
     <div class="center">
         <button  onclick="submitData()" class="button">ส่งข้อมูล</button>
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

@@ -32,6 +32,30 @@ const initMySQL = async () => {
   })
 }
 
+//10.1เพิ่ม function สำหรับการ validate ขึ้นมา
+const validateData = (userData) => {
+  let errors = []
+  if (!userData.firstname) {
+    errors.push('กรุณาใส่ชื่อจริง')
+  }
+  if (!userData.lastname) {
+    errors.push('กรุณาใส่นามสกุล')
+  }
+  if (!userData.age) {
+    errors.push('กรุณาใส่อายุ')
+  }
+  if (!userData.gender) {
+    errors.push('กรุณาเลือกเพศ')
+  }
+  if (!userData.interests) {
+      errors.push('กรุณาเลือกความสนใจอย่างน้อย 1 อย่าง')
+    }
+  if (!userData.description) {
+    errors.push('กรุณาใส่คำอธิบายของคุณ')
+  }
+  return errors
+}
+
 //8.2 path = GET /testdb แบบปัจจุบัน async, await นิยมใช้
 app.get('/testdb-new', async (req, res) => {
   try { //ทำการลองก่อน ทำจากบนลงล่าง
@@ -61,16 +85,27 @@ app.post('/users', async (req, res) => {
   //3.2
   try {
     let user = req.body
+
+    // เพิ่ม code สำหรับ validate
+    const errors = validateData(user)
+    if (errors.length > 0) {
+      throw {
+        message: 'กรอกข้อมูลไม่ครบ',
+        errors: errors
+      }
+    }
+
     const results = await conn.query('INSERT INTO users SET ?', user)
     res.json({
       message: 'insert ok',
       data: results[0]
     })
   } catch (error) {
+    const message = error.errorMessage || 'กรอกข้อมูลไม่ครบ & Something Wrong'
     console.error('error message', error.message)
     res.status(500).json({
-      message: 'somethin wrong',
-      // errorMessage: error.message แสดงหลังบ้าน
+      message: message,
+      errors: error.errors || []
     })
   }
 })
@@ -88,7 +123,7 @@ app.get('/users/:id', async (req, res) => {
     console.error('error message', error.message)
     let statusCode = error.statusCode || 500
     res.status(500).json({
-      message: 'somethin wrong',
+      message: 'something wrong',
       errorMessage: error.message
     })
   }
